@@ -1,0 +1,34 @@
+#include "resource.h"
+#include <windows.h>
+
+IDI_APP_ICON ICON "icon.ico"
+1 RT_MANIFEST "app.manifest"
+
+LANGUAGE 0x09, 0x01
+
+1 VERSIONINFO
+ FILEVERSION     0,1,0,0
+ PRODUCTVERSION  0,1,0,0
+ FILEFLAGSMASK   0x3f
+ FILEFLAGS       0x0
+ FILEOS          0x40004
+ FILETYPE        0x1
+ FILESUBTYPE     0x0
+BEGIN
+    BLOCK "StringFileInfo"
+    BEGIN
+        BLOCK "040904B0"
+        BEGIN
+            VALUE "CompanyName", "Avegly"
+            VALUE "FileDescription", "Avegly Ram Editor"
+            VALUE "FileVersion", "0.1.0.0"
+            VALUE "ProductName", "Avegly Ram Editor"
+            VALUE "ProductVersion", "0.1.0.0"
+        END
+    END
+
+    BLOCK "VarFileInfo"
+    BEGIN
+        VALUE "Translation", 0x0409, 1200
+    END
+END
